@@ -1,0 +1,40 @@
+pipeline {
+    agent any
+    tools { jdk 'jdk21' }
+
+    stages {
+        stage('Clean Workspace') {
+            steps {
+                script {
+                    echo "Cleaning workspace..."
+                    deleteDir()
+                }
+            }
+        }
+
+        stage('Git Checkout') {
+            steps {
+                script {
+                    git branch: 'main', 
+                        credentialsId: 'github_seccred', 
+                        url: 'https://github.com/GiridharanS1729/text-case-converter.git'
+                }
+            }
+        }
+
+        stage('Docker Build & Push') {
+            steps {
+                script {
+                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker') {
+                        def imageName = "giridharans1729/text-case-converter"
+                        def tag = "latest"
+                        sh "docker build -t ${imageName} ."
+                        sh "docker tag ${imageName} ${imageName}:${tag}"
+                        sh "docker push ${imageName}:${tag}"
+                    }
+                }
+            }
+        }
+        
+        }
+}

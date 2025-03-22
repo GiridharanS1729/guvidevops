@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Case Converter - Convert Text to Uppercase, Lowercase, Title Case</title>
+
+    <meta name="description"
+        content="Easily convert text to uppercase, lowercase, title case, and more. A free online tool for quick text formatting.">
+    <meta name="keywords"
+        content="text case converter, uppercase, lowercase, title case, text formatter, online text tool">
+    <meta name="author" content="Giridharan S">
+
+    <meta property="og:title" content="Text Case Converter - Convert Text Instantly">
+    <meta property="og:description"
+        content="Use our free text case converter to change text to uppercase, lowercase, title case, and more with ease.">
+    <meta property="og:image" content="https://txtc.netlify.app/assets/screenshots/a.png">
+    <meta property="og:url" content="https://txtc.netlify.app/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="canonical" href="https://txtc.netlify.app/">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="button-group">
+            <button onclick="convertText('uppercase')">Uppercase</button>
+            <button onclick="convertText('lowercase')">Lowercase</button>
+            <button onclick="convertText('camelcase')">CamelCase</button>
+            <button onclick="convertText('titlecase')">Title Case</button>
+            <button onclick="convertText('altcase')">Alt Case</button>
+            <button onclick="convertText('pascalcase')">Pascal Case</button>
+            <button onclick="convertText('sentencecase')">Sentence case</button>
+            <button onclick="convertText('initialcase')">Initial Case</button>
+            <button onclick="convertText('swapcase')">Swap case</button>
+        </div>
+        <div class="button-group">
+            <button id="copy-button">Copy to Clipboard</button>
+            <button id="clear-button">Clear All Text</button>
+            <button id="download-button">Download as Text File</button>
+        </div>
+
+        <textarea id="text-input" rows="5" placeholder="Type your text here..."></textarea>
+    </div>
+    <p class="credits">Copyright &copy; 2024 Giridharan S</p>
+    <script src="./assets/scripts.js"></script>
+</body>
+
+</html>

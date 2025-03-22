@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('case.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    backdrop-filter: blur(2px);
+}
+
+.container {
+    max-height: 100vh;
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    flex: 1 1 18%;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #f4047c, #fe3b3b);
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    background:#ffffff31 ;
+    color:#000;
+    font-weight: 900;
+    padding: 1px 10px;
+    border:2px solid  #f4047c;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+textarea {
+    width: 100%;
+    max-height: 80vh;
+    padding: 10px;
+    border: 2px solid #fe3b3b;
+    border-radius: 10px;
+    font-size: 16px;
+    resize: none;
+    overflow: scroll;
+    min-height: 100px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+textarea:focus {
+    border-color: #f4047c;
+}
+
+.credits {
+    font-size: 20px;
+    color: #411b00;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    font-weight: 600;
+    position: fixed;
+    bottom: 20px;
+    backdrop-filter: blur(80px);
+    font-family: arial;
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-text-stroke: #000080b1 0.3px;
+    background-color: #fff1;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 5PX;
+
+}
