@@ -44,3 +44,5 @@ This repository contains a **Text Case Converter** application designed as a **s
 ---
 
 This repository is a **complete package** for building, containerizing, automating, and deploying a simple web application using **Docker, Jenkins, and Kubernetes**. 🚀  
+
+<img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FGiridharanS1729%2Fguvidevops%2F&countColor=%23263759" />
